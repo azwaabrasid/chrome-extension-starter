@@ -1,0 +1,6 @@
+# Builds
+dist/
+public/manifest.json
+
+# Tooling
+node_modules/

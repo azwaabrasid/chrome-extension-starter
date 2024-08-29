@@ -1,0 +1,54 @@
+@layer components {
+  .form-fields {
+    @apply grid gap-4;
+  }
+
+  .form-input {
+    @apply block w-full rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-950 placeholder:text-gray-500 focus:border-blue-500 focus:ring-blue-500 focus:ring-offset-blue-500;
+
+    &.error {
+      @apply border-rose-700 ring-rose-700 ring-offset-rose-700;
+    }
+  }
+
+  select.form-input {
+    @apply appearance-none pr-10;
+    background-image: unset;
+  }
+
+  .form-input-error {
+    @apply text-sm text-rose-700;
+  }
+
+  .form-feedback {
+    @apply py-3 text-center text-sm text-rose-700;
+  }
+
+  .form-label {
+    @apply mb-2 block text-sm font-medium text-gray-800;
+  }
+
+  .form-input-checkbox {
+    @apply h-6 w-6 appearance-none rounded-md border border-gray-400 text-blue-600 checked:border-blue-600 checked:bg-blue-600 focus:ring-blue-500;
+
+    &:checked {
+      background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z" fill="%23ffffff" /></svg>');
+    }
+
+    &.error {
+      @apply border-rose-700 focus:outline-rose-700;
+    }
+  }
+
+  .form-input-checkbox-text {
+    @apply pt-0.5 text-sm text-gray-500;
+
+    a {
+      @apply text-blue-600;
+    }
+  }
+
+  .form-input-checkbox-group {
+    @apply flex gap-3;
+  }
+}
